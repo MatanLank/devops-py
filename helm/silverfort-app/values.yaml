@@ -1,0 +1,7 @@
+image:
+  name: silverfort-app
+  tag: "1.0"
+
+service:
+  port: 8443
+

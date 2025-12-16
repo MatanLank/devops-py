@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: silverfort-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: silverfort-app
+  template:
+    metadata:
+      labels:
+        app: silverfort-app
+    spec:
+      containers:
+        - name: silverfort-app
+          image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 8443
+

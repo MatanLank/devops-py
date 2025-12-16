@@ -1,0 +1,5 @@
+apiVersion: v2
+name: silverfort-app
+description: Silverfort DevOps Home Assignment
+version: 0.1.0
+
